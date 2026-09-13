@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --gradient-brand: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.bg-brand-gradient {
+  background-image: var(--gradient-brand);
+}
+
+.text-brand-gradient {
+  background-image: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-brand {
+  background-image: var(--gradient-brand);
+  color: white;
+  border: none;
+}
+
+.btn-brand:hover {
+  opacity: 0.9;
+}
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
