@@ -20,7 +20,6 @@ const faqs = [
       "You can use technology icon URLs from different sources. TechIcons is one useful source for clean technology logos.",
   },
 ];
-
 const FAQ = () => {
   return (
     <section id="faq" className="max-w-6xl mx-auto px-4 py-7 sm:px-6 lg:px-8">
@@ -29,13 +28,10 @@ const FAQ = () => {
         <h2 className="text-2xl font-bold text-gray-900">
           Common <span className="brand-gradient-text">FAQ</span>
         </h2>
-
         <p className="text-sm text-gray-500 mt-2">
           Frequently asked questions about Dev Stack.
         </p>
       </div>
-
-     
       <div className="space-y-3">
         {faqs.map((faq, index) => (
           <details
@@ -45,7 +41,6 @@ const FAQ = () => {
             <summary className="text-sm font-semibold text-gray-800 cursor-pointer">
               {faq.question}
             </summary>
-
             <p className="text-xs text-gray-500 leading-5 mt-3">
               {faq.answer}
             </p>
