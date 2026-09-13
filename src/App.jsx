@@ -88,7 +88,7 @@ function App() {
               </div>
 
               {/* Your Stack sidebar */}
-              <div className="lg:w-80 flex-shrink-0">
+              <div className="lg:w-80 shrink-0">
                 <StackPanel
                   stack={stack}
                   onRemove={removeFromStack}
