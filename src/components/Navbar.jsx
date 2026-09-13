@@ -30,11 +30,7 @@ export default function Navbar() {
               )}
             </svg>
           </button>
-
-
-             <img src={logo} alt="Logo" className="h-8 w-auto" />         
-
-          
+             <img src={logo} alt="Logo" className="h-8 w-auto" />                  
           <nav className="hidden lg:flex items-center gap-8">
             {links.map((link) => (
               <a
@@ -47,7 +43,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-        
+  
           <div className="flex items-center gap-3">
             <button className="text-sm font-medium text-gray-700 hover:text-gray-900 px-3 py-1.5">
               Sign In
@@ -57,7 +53,6 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-
       
         {open && (
           <div className="lg:hidden pb-4 border-t border-gray-100 pt-3">

@@ -32,12 +32,12 @@ export default function Hero() {
             </div>
           </div>
 
-         <img
-  src={heroImage}
-  alt="Hero illustration"
-  className="w-[40%] object-cover rounded-xl hover:scale-105"
-/>
-       </div>
+          <img
+            src={heroImage}
+            alt="Hero illustration"
+            className="w-[40%] object-cover rounded-xl hover:scale-105"
+          />
+        </div>
       </div>
     </section>
   )
